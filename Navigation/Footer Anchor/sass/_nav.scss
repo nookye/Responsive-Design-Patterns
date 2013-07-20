@@ -1,0 +1,42 @@
+
+// declare variables
+
+.header{
+	margin-bottom: 2em;
+	text-align: right;
+}
+
+.menu-icon{
+	@include icon(red);
+	@include breakpoint(baby-bear){
+		display: none;
+	}
+}
+
+.nav{
+	@include breakpoint(baby-bear){
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin: 0;
+		border: 0;
+	}
+}
+
+.nav li{
+	border-top: 1px solid red;	
+	@include breakpoint(baby-bear){
+		display: inline-block;
+		margin-right: .25em;
+		border: none;
+	}
+}
+
+.nav a{
+	display: block;
+	padding: .8em 1em;
+	@include breakpoint(baby-bear){
+		border: 0;
+	}
+}
+
