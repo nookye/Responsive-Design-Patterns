@@ -24,11 +24,8 @@ $icon-size: .6em;
 	margin: 0;
 	display: none;
 
-	@include respond-min(little-bear,lt-ie9){
-		display: block;
-	}
-
 	@include respond-min(baby-bear,lt-ie9){
+		display: block;
 		margin: 0 auto;
 		width: $nav-width;
 		height: $nav-height;
