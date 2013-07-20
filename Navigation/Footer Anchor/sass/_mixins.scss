@@ -16,6 +16,10 @@
   	.#{$wrapper-class} & { @content; }
     @media (min-width: 40em)  { @content; }
   }
+    @else if $point == little-bear {
+    .#{$wrapper-class} & { @content; }
+    @media (min-width: 30em)  { @content; }
+  }
 }
 
 // 3 lines mobile menu icon
