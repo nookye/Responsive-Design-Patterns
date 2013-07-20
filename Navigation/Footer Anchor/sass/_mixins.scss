@@ -1,13 +1,19 @@
 
 // media queries breakpoint
-@mixin breakpoint($point) {
+// "http://alwaystwisted.com/post.php?s=2012-08-06-a-sass-mixin-for-media-queries-and-ie"
+// "http://css-tricks.com/media-queries-sass-3-2-and-codekit/"
+
+@mixin respond-min($point, $wrapper-class) {
   @if $point == papa-bear {
+  	.#{$wrapper-class} & { @content; }
     @media (min-width: 75em) { @content; }
   }
   @else if $point == mama-bear {
+  	.#{$wrapper-class} & { @content; }
     @media (min-width: 60em) { @content; }
   }
   @else if $point == baby-bear {
+  	.#{$wrapper-class} & { @content; }
     @media (min-width: 40em)  { @content; }
   }
 }

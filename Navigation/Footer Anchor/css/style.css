@@ -297,6 +297,10 @@ table {
 .header {
   margin: 1em 0 1em;
 }
+/* line 16, ../sass/_mixins.scss */
+.lt-ie9 .header {
+  margin-bottom: 3em;
+}
 @media (min-width: 40em) {
   /* line 6, ../sass/_nav.scss */
   .header {
@@ -309,7 +313,7 @@ table {
   position: relative;
   padding-left: 1.25em;
 }
-/* line 20, ../sass/_mixins.scss */
+/* line 26, ../sass/_mixins.scss */
 .menu-icon:before {
   content: "";
   position: absolute;
@@ -319,6 +323,10 @@ table {
   height: 0.15em;
   background: #4d4d4d;
   box-shadow: 0 0.25em 0 0 #4d4d4d, 0 0.5em 0 0 #4d4d4d;
+}
+/* line 16, ../sass/_mixins.scss */
+.lt-ie9 .menu-icon {
+  display: none;
 }
 @media (min-width: 40em) {
   /* line 14, ../sass/_nav.scss */
@@ -330,6 +338,14 @@ table {
 /* line 22, ../sass/_nav.scss */
 .nav {
   overflow: hidden;
+}
+/* line 16, ../sass/_mixins.scss */
+.lt-ie9 .nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  border: 0;
 }
 @media (min-width: 40em) {
   /* line 22, ../sass/_nav.scss */
@@ -346,6 +362,12 @@ table {
 .nav-item {
   border-top: 1px solid #b3b3b3;
 }
+/* line 16, ../sass/_mixins.scss */
+.lt-ie9 .nav-item {
+  display: inline-block;
+  margin-right: .25em;
+  border: none;
+}
 @media (min-width: 40em) {
   /* line 33, ../sass/_nav.scss */
   .nav-item {
@@ -361,6 +383,10 @@ table {
   padding: 0.8em 1em;
   color: #4d4d4d;
   background: #e6e6e6;
+}
+/* line 16, ../sass/_mixins.scss */
+.lt-ie9 .nav-item a {
+  border: 0;
 }
 @media (min-width: 40em) {
   /* line 43, ../sass/_nav.scss */
