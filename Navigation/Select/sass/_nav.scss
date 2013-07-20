@@ -1,0 +1,74 @@
+
+// declare variables
+$main-color: darken(white, 60%);
+$secondary-color: white;
+$nav-height: 2.5em;
+$nav-width: 37.5em;
+$nav-items: 6;
+
+.nav-wrapper{
+	@include clearfix;
+
+	width: 100%;
+	background: $main-color;
+	height: $nav-height;
+	border-bottom: 2px solid darken($main-color, 20%);
+}
+
+.nav{
+	@include clearfix;
+
+	width: $nav-width;
+	height: $nav-height;
+	margin: 0 auto;
+	display: none;
+
+	@include respond-min(baby-bear, lt-ie9) {
+		display: block;
+	}
+}
+
+.nav-item{
+	@include clearfix;
+
+	display: inline;
+	float: left;
+
+	&:last-child a{
+		border-right: 0;
+	}		
+
+	a{
+		@include box-sizing(border-box);
+		@include text-shadow(1px 1px 0 darken($secondary-color, 70%));
+
+		color: $secondary-color;
+		text-align: center;
+		line-height: $nav-height;
+		display: inline-block;
+		width: $nav-width / $nav-items;
+		border-right: 1px solid lighten($main-color, 10%);
+		
+		&:hover, &:active{
+			background: lighten($main-color, 10%);
+		}		
+	}
+}
+
+.nav-select{
+	@include border-radius(4px);
+
+	display: block;	
+	text-aligng: center;
+	background: darken($secondary-color, 10%);
+	color: $main-color;
+	padding: 2px;
+	outline: none;
+	cursor: pointer;
+	width: 12.5em;
+	margin: .3em auto;
+
+	@include respond-min(baby-bear, lt-ie9) {
+		display: none;
+	}
+}
