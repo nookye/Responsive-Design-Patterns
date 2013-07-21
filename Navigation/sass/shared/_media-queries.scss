@@ -21,24 +21,3 @@
     @media (min-width: 30em)  { @content; }
   }
 }
-
-// 3 lines mobile menu icon
-@mixin icon($color,$size) {
-  position: relative;
-  padding-left: 2.5 * $size;//1.25em;
-
-  &:before{
-	  content: "";
-	  position: absolute;
-	  left: 0;
-	  top: 0.5 * $size;//0.25em;
-	  width: 2 * $size;//1em;
-	  height: 0.3 * $size;//0.15em;
-	  background: $color;
-	  box-shadow: 
-	    //0 0.25em 0 0 $color,
-	    //0 0.5em 0 0 $color;  	
-	    0 0.5 * $size 0 0 $color,
-	    0 $size 0 0 $color;
-  }
-}
