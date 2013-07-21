@@ -293,7 +293,7 @@ table {
   border-spacing: 0;
 }
 
-/* line 10, ../../sass/toggle/_nav.scss */
+/* line 13, ../../sass/toggle/_nav.scss */
 .nav-wrapper {
   width: 100%;
   background: #666666;
@@ -304,14 +304,14 @@ table {
   border-bottom: 2px solid #333333;
 }
 @media (min-width: 40em) {
-  /* line 10, ../../sass/toggle/_nav.scss */
+  /* line 13, ../../sass/toggle/_nav.scss */
   .nav-wrapper {
     height: 2.5em;
     border-bottom: 2px solid #333333;
   }
 }
 
-/* line 20, ../../sass/toggle/_nav.scss */
+/* line 23, ../../sass/toggle/_nav.scss */
 .nav {
   overflow: hidden;
   width: 100%;
@@ -326,7 +326,7 @@ table {
   height: 2.5em;
 }
 @media (min-width: 40em) {
-  /* line 20, ../../sass/toggle/_nav.scss */
+  /* line 23, ../../sass/toggle/_nav.scss */
   .nav {
     display: block;
     margin: 0 auto;
@@ -335,7 +335,7 @@ table {
   }
 }
 
-/* line 35, ../../sass/toggle/_nav.scss */
+/* line 38, ../../sass/toggle/_nav.scss */
 .nav-item {
   overflow: hidden;
   display: block;
@@ -347,7 +347,7 @@ table {
   float: left;
 }
 @media (min-width: 30em) {
-  /* line 35, ../../sass/toggle/_nav.scss */
+  /* line 38, ../../sass/toggle/_nav.scss */
   .nav-item {
     width: 50%;
     float: left;
@@ -358,22 +358,22 @@ table {
   display: inline;
   width: auto;
 }
-/* line 50, ../../sass/toggle/_nav.scss */
+/* line 53, ../../sass/toggle/_nav.scss */
 .lt-ie9 .nav-item:last-child a {
   border-right: 0;
 }
 @media (min-width: 40em) {
-  /* line 35, ../../sass/toggle/_nav.scss */
+  /* line 38, ../../sass/toggle/_nav.scss */
   .nav-item {
     display: inline;
     width: auto;
   }
-  /* line 50, ../../sass/toggle/_nav.scss */
+  /* line 53, ../../sass/toggle/_nav.scss */
   .nav-item:last-child a {
     border-right: 0;
   }
 }
-/* line 55, ../../sass/toggle/_nav.scss */
+/* line 58, ../../sass/toggle/_nav.scss */
 .nav-item a {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -392,7 +392,7 @@ table {
   border-right: 1px solid gray;
 }
 @media (min-width: 30em) {
-  /* line 55, ../../sass/toggle/_nav.scss */
+  /* line 58, ../../sass/toggle/_nav.scss */
   .nav-item a {
     border-right: 1px solid gray;
   }
@@ -405,7 +405,7 @@ table {
   text-indent: 0;
 }
 @media (min-width: 40em) {
-  /* line 55, ../../sass/toggle/_nav.scss */
+  /* line 58, ../../sass/toggle/_nav.scss */
   .nav-item a {
     display: inline-block;
     width: 6.25em;
@@ -413,12 +413,12 @@ table {
     text-indent: 0;
   }
 }
-/* line 78, ../../sass/toggle/_nav.scss */
+/* line 81, ../../sass/toggle/_nav.scss */
 .nav-item a:hover, .nav-item a:active {
   background: gray;
 }
 
-/* line 84, ../../sass/toggle/_nav.scss */
+/* line 87, ../../sass/toggle/_nav.scss */
 .menu-icon {
   position: relative;
   padding-left: 1.5em;
@@ -445,12 +445,12 @@ table {
   display: none;
 }
 @media (min-width: 40em) {
-  /* line 84, ../../sass/toggle/_nav.scss */
+  /* line 87, ../../sass/toggle/_nav.scss */
   .menu-icon {
     display: none;
   }
 }
-/* line 98, ../../sass/toggle/_nav.scss */
+/* line 101, ../../sass/toggle/_nav.scss */
 .menu-icon:before {
   left: 1.5em;
   top: 38%;

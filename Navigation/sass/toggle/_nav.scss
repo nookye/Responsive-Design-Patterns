@@ -1,103 +1,107 @@
 
-// declare variables
-$main-color: darken(white, 60%);
-$secondary-color: white;
-$nav-height: 2.5em;
-$nav-width: 37.5em;
-$nav-items: 6;
-$icon-size: .6em;
 
-.nav-wrapper{
-	width: 100%;
-	background: $main-color;
+@mixin toggle-nav($color1: darken(white, 60%), $color2: white, $height: 2.5em, $width: 37.5em, $items: 6,$icon-size: .6em) {
+	
+	// declare variables
+	$main-color: $color1;
+	$secondary-color: $color2;
+	$nav-height: $height;
+	$nav-width: $width;
+	$nav-items: $items;
+	$icon-size: $icon-size;
 
-	@include respond-min(baby-bear,lt-ie9){
-		height: $nav-height;
-		border-bottom: 2px solid darken($main-color, 20%);
-	}
-}
+	.nav-wrapper{
+		width: 100%;
+		background: $main-color;
 
-.nav{
-	@include clearfix;
-
-	width: 100%;
-	margin: 0;
-	display: none;
-
-	@include respond-min(baby-bear,lt-ie9){
-		display: block;
-		margin: 0 auto;
-		width: $nav-width;
-		height: $nav-height;
-	}
-}
-
-.nav-item{
-	@include clearfix;
-
-	display: block;
-	width: 100%;
-
-	@include respond-min(little-bear,lt-ie9){
-		width: 50%;
-		float: left;		
+		@include respond-min(baby-bear,lt-ie9){
+			height: $nav-height;
+			border-bottom: 2px solid darken($main-color, 20%);
+		}
 	}
 
-	@include respond-min(baby-bear,lt-ie9){
-		display: inline;
-		width: auto;
+	.nav{
+		@include clearfix;
 
-		&:last-child a{
-			border-right: 0;
-		}		
+		width: 100%;
+		margin: 0;
+		display: none;
+
+		@include respond-min(baby-bear,lt-ie9){
+			display: block;
+			margin: 0 auto;
+			width: $nav-width;
+			height: $nav-height;
+		}
 	}
 
-	a{
-		@include box-sizing(border-box);
-		@include text-shadow(1px 1px 0 darken($secondary-color, 70%));
+	.nav-item{
+		@include clearfix;
 
-		color: $secondary-color;
-		text-align: left;
-		line-height: $nav-height;
-		text-indent: 1.5em;
 		display: block;
 		width: 100%;
-		border-bottom: 1px solid lighten($main-color, 10%);
 
 		@include respond-min(little-bear,lt-ie9){
-			border-right: 1px solid lighten($main-color, 10%);
+			width: 50%;
+			float: left;		
 		}
 
 		@include respond-min(baby-bear,lt-ie9){
-			display: inline-block;
-			width: $nav-width / $nav-items;
-			text-align: center;
-			text-indent: 0;
+			display: inline;
+			width: auto;
+
+			&:last-child a{
+				border-right: 0;
+			}		
 		}
-		
-		&:hover, &:active{
-			background: lighten($main-color, 10%);
-		}		
+
+		a{
+			@include box-sizing(border-box);
+			@include text-shadow(1px 1px 0 darken($secondary-color, 70%));
+
+			color: $secondary-color;
+			text-align: left;
+			line-height: $nav-height;
+			text-indent: 1.5em;
+			display: block;
+			width: 100%;
+			border-bottom: 1px solid lighten($main-color, 10%);
+
+			@include respond-min(little-bear,lt-ie9){
+				border-right: 1px solid lighten($main-color, 10%);
+			}
+
+			@include respond-min(baby-bear,lt-ie9){
+				display: inline-block;
+				width: $nav-width / $nav-items;
+				text-align: center;
+				text-indent: 0;
+			}
+			
+			&:hover, &:active{
+				background: lighten($main-color, 10%);
+			}		
+		}
 	}
-}
 
-.menu-icon{
-	@include icon($secondary-color,$icon-size);
+	.menu-icon{
+		@include icon($secondary-color,$icon-size);
 
-	display: block;
-	height: $nav-height;
-	color: $secondary-color;
-	line-height: 2.7;
-	padding-left: 1.5em * 3;
-	background: darken($main-color, 15%);
+		display: block;
+		height: $nav-height;
+		color: $secondary-color;
+		line-height: 2.7;
+		padding-left: 1.5em * 3;
+		background: darken($main-color, 15%);
 
-	@include respond-min(baby-bear,lt-ie9){
-		display: none;
-	}
+		@include respond-min(baby-bear,lt-ie9){
+			display: none;
+		}
 
-	&:before{
-		left: 1.5em;
-		top: 38%;
+		&:before{
+			left: 1.5em;
+			top: 38%;
+		}
 	}
 }
 

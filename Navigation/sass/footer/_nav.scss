@@ -1,54 +1,57 @@
 
-// declare variables
-$main-color: darken(white, 10%);
-
-
-.header{
-	margin: 1em 0 1em;
-
-	@include respond-min(baby-bear,lt-ie9){
-		margin-bottom: 3em;
-	}
-}
-
-.menu-icon{
-	@include icon(darken($main-color, 60%),.5em);
-
-	@include respond-min(baby-bear,lt-ie9){
-		display: none;
-	}
-}
-
-.nav{
-	overflow: hidden;
+@mixin footer-nav($color:darken(white,10%)) {
 	
-	@include respond-min(baby-bear,lt-ie9){
-		position: absolute;
-		top: 0;
-		left: 0;
-		margin: 0;
-		border: 0;
+	// declare variables
+	$main-color: $color;
+
+
+	.header{
+		margin: 1em 0 1em;
+
+		@include respond-min(baby-bear,lt-ie9){
+			margin-bottom: 3em;
+		}
 	}
-}
 
-.nav-item{
-	border-top: 1px solid darken($main-color, 20%);	
+	.menu-icon{
+		@include icon(darken($main-color, 60%),.5em);
 
-	@include respond-min(baby-bear,lt-ie9){
-		display: inline-block;
-		margin-right: .25em;
-		border: none;
+		@include respond-min(baby-bear,lt-ie9){
+			display: none;
+		}
 	}
-}
 
-.nav-item a{
-	display: block;
-	padding: .8em 1em;
-	color: darken($main-color, 60%);
-	background: $main-color;
-
-	@include respond-min(baby-bear,lt-ie9){
-		border: 0;
+	.nav{
+		overflow: hidden;
+		
+		@include respond-min(baby-bear,lt-ie9){
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin: 0;
+			border: 0;
+		}
 	}
-}
 
+	.nav-item{
+		border-top: 1px solid darken($main-color, 20%);	
+
+		@include respond-min(baby-bear,lt-ie9){
+			display: inline-block;
+			margin-right: .25em;
+			border: none;
+		}
+	}
+
+	.nav-item a{
+		display: block;
+		padding: .8em 1em;
+		color: darken($main-color, 30%);
+		background: $main-color;
+
+		@include respond-min(baby-bear,lt-ie9){
+			border: 0;
+		}
+	}
+
+}
