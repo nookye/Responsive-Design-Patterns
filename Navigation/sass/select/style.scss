@@ -6,8 +6,12 @@
 @import "shared/normalize";
 @import "shared/media-queries";
 @import "shared/menu-icon";
+@import "shared/retina-sprites";
+@import "shared/bg-image";
+
 @import "compass/utilities/general/clearfix";
 @import "compass/css3";
+
 @import "nav";
 
 @include select-nav;

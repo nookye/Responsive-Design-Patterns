@@ -293,6 +293,46 @@ table {
   border-spacing: 0;
 }
 
+/*here is the sprite*/
+/* line 6, ../../sass/shared/_bg-image.scss */
+.nav-item .icon {
+  height: 17px;
+  width: 17px;
+  background-image: url('../../img/sprites-s54ad8b3399.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5%;
+}
+/* line 29, ../../sass/shared/_retina-sprites.scss */
+.nav-item .icon:hover {
+  background-position: 0 -34px;
+}
+/* line 35, ../../sass/shared/_retina-sprites.scss */
+.nav-item .icon:active {
+  background-position: 0 -17px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../../sass/shared/_retina-sprites.scss */
+  .nav-item .icon {
+    background-image: url('../../img/retina-sprites-s5dc4e77654.png');
+    background-position: 0 0;
+    -webkit-background-size: 17px auto;
+    -moz-background-size: 17px auto;
+    -o-background-size: 17px auto;
+    background-size: 17px auto;
+  }
+  /* line 56, ../../sass/shared/_retina-sprites.scss */
+  .nav-item .icon:hover {
+    background-position: 0 -34px;
+  }
+  /* line 63, ../../sass/shared/_retina-sprites.scss */
+  .nav-item .icon:active {
+    background-position: 0 -17px;
+  }
+}
+
 /* line 10, ../../sass/select/_nav.scss */
 .nav-wrapper {
   overflow: hidden;

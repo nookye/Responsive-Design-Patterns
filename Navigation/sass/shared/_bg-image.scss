@@ -1,0 +1,11 @@
+// this is the bg sprite
+/*here is the sprite*/
+$sprites: sprite-map("sprites/*.png");              
+$sprites2x: sprite-map("retina-sprites/*.png");
+
+.nav-item .icon{
+	@include retina-sprite(icon, $hover: true, $active: true);
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5%;
+}
