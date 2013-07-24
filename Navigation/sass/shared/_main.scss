@@ -1,0 +1,34 @@
+
+@import "utilities/retina-sprites";  // import this once for all sprites
+
+
+
+
+
+/* ======== In production, I would abstract all of the following into it's own SCSS file ======== */
+
+
+$sprites: sprite-map("sprites/buttons/*.png");              // import 1x sprites from buttons subfolder 
+$sprites2x: sprite-map("sprites-retina/buttons/*.png");     // import 2x sprites from buttons subfolder
+
+
+ // $sprites: sprite-map("sprites/buttons/*.png", $spacing: 40px);          // add padding to sprite sheet
+ // $sprites2x: sprite-map("sprites-retina/buttons/*.png", $spacing: 80px); // add padding to sprite sheet
+
+
+.myHoverActiveButton {
+	@include retina-sprite(signIn, $hover: true, $active: true);
+}
+
+.myHoverButton {
+	@include retina-sprite(signIn, $hover: true);
+}
+
+.myActiveButton {
+	@include retina-sprite(signIn, $active: true);
+}
+
+.myBoringButton {
+	@include retina-sprite(signIn);
+}
+

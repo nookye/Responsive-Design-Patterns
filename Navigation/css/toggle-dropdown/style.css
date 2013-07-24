@@ -1,0 +1,512 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 55, ../../sass/shared/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 63, ../../sass/shared/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/* line 74, ../../sass/shared/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 81, ../../sass/shared/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 94, ../../sass/shared/_normalize.scss */
+html {
+  background: white;
+  color: black;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 110, ../../sass/shared/_normalize.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/* line 116, ../../sass/shared/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 128, ../../sass/shared/_normalize.scss */
+a {
+  text-decoration: none;
+}
+/* line 133, ../../sass/shared/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+/* line 140, ../../sass/shared/_normalize.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* line 153, ../../sass/shared/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 158, ../../sass/shared/_normalize.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 163, ../../sass/shared/_normalize.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 168, ../../sass/shared/_normalize.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 173, ../../sass/shared/_normalize.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 178, ../../sass/shared/_normalize.scss */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+/* line 186, ../../sass/shared/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 193, ../../sass/shared/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 205, ../../sass/shared/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 211, ../../sass/shared/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 230, ../../sass/shared/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 240, ../../sass/shared/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 248, ../../sass/shared/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* line 264, ../../sass/shared/_normalize.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 271, ../../sass/shared/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 279, ../../sass/shared/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 286, ../../sass/shared/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 290, ../../sass/shared/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 327, ../../sass/shared/_normalize.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* line 344, ../../sass/shared/_normalize.scss */
+img {
+  border: 0;
+}
+
+/* line 353, ../../sass/shared/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 363, ../../sass/shared/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* line 380, ../../sass/shared/_normalize.scss */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 391, ../../sass/shared/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+}
+
+/* line 408, ../../sass/shared/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+/* line 421, ../../sass/shared/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/* line 431, ../../sass/shared/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 446, ../../sass/shared/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 457, ../../sass/shared/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/* line 467, ../../sass/shared/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 479, ../../sass/shared/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 490, ../../sass/shared/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 498, ../../sass/shared/_normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 507, ../../sass/shared/_normalize.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 518, ../../sass/shared/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*here is the sprite*/
+/* line 6, ../../sass/shared/_bg-image.scss */
+.nav-item .icon {
+  height: 17px;
+  width: 17px;
+  background-image: url('../../img/sprites-s54ad8b3399.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5%;
+}
+/* line 29, ../../sass/shared/_retina-sprites.scss */
+.nav-item .icon:hover {
+  background-position: 0 -34px;
+}
+/* line 35, ../../sass/shared/_retina-sprites.scss */
+.nav-item .icon:active {
+  background-position: 0 -17px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../../sass/shared/_retina-sprites.scss */
+  .nav-item .icon {
+    background-image: url('../../img/retina-sprites-s5dc4e77654.png');
+    background-position: 0 0;
+    -webkit-background-size: 17px auto;
+    -moz-background-size: 17px auto;
+    -o-background-size: 17px auto;
+    background-size: 17px auto;
+  }
+  /* line 56, ../../sass/shared/_retina-sprites.scss */
+  .nav-item .icon:hover {
+    background-position: 0 -34px;
+  }
+  /* line 63, ../../sass/shared/_retina-sprites.scss */
+  .nav-item .icon:active {
+    background-position: 0 -17px;
+  }
+}
+
+/* line 12, ../../sass/toggle-dropdown/_nav.scss */
+.nav-wrapper {
+  width: 100%;
+  background: #666666;
+}
+/* line 16, ../../sass/shared/_media-queries.scss */
+.lt-ie9 .nav-wrapper {
+  height: 2.5em;
+  border-bottom: 2px solid #333333;
+}
+@media (min-width: 40em) {
+  /* line 12, ../../sass/toggle-dropdown/_nav.scss */
+  .nav-wrapper {
+    height: 2.5em;
+    border-bottom: 2px solid #333333;
+  }
+}
+
+/* line 22, ../../sass/toggle-dropdown/_nav.scss */
+.nav {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  display: none;
+}
+/* line 16, ../../sass/shared/_media-queries.scss */
+.lt-ie9 .nav {
+  display: block;
+  margin: 0 auto;
+  width: 37.5em;
+  height: 2.5em;
+}
+@media (min-width: 40em) {
+  /* line 22, ../../sass/toggle-dropdown/_nav.scss */
+  .nav {
+    display: block;
+    margin: 0 auto;
+    width: 37.5em;
+    height: 2.5em;
+  }
+}
+
+/* line 37, ../../sass/toggle-dropdown/_nav.scss */
+.nav-item {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+}
+/* line 16, ../../sass/shared/_media-queries.scss */
+.lt-ie9 .nav-item {
+  float: left;
+  display: inline;
+  width: auto;
+}
+/* line 48, ../../sass/toggle-dropdown/_nav.scss */
+.lt-ie9 .nav-item:last-child a {
+  border-right: 0;
+}
+/* line 52, ../../sass/toggle-dropdown/_nav.scss */
+.lt-ie9 .nav-item ul {
+  background: #666666;
+}
+@media (min-width: 40em) {
+  /* line 37, ../../sass/toggle-dropdown/_nav.scss */
+  .nav-item {
+    float: left;
+    display: inline;
+    width: auto;
+  }
+  /* line 48, ../../sass/toggle-dropdown/_nav.scss */
+  .nav-item:last-child a {
+    border-right: 0;
+  }
+  /* line 52, ../../sass/toggle-dropdown/_nav.scss */
+  .nav-item ul {
+    background: #666666;
+  }
+}
+/* line 57, ../../sass/toggle-dropdown/_nav.scss */
+.nav-item a {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-shadow: 1px 1px 0 #4d4d4d;
+  color: white;
+  text-align: left;
+  line-height: 2.5em;
+  text-indent: 1.5em;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+/* line 16, ../../sass/shared/_media-queries.scss */
+.lt-ie9 .nav-item a {
+  border-right: 1px solid gray;
+  display: inline-block;
+  width: 6.25em;
+  text-align: center;
+  text-indent: 0;
+}
+@media (min-width: 40em) {
+  /* line 57, ../../sass/toggle-dropdown/_nav.scss */
+  .nav-item a {
+    border-right: 1px solid gray;
+    display: inline-block;
+    width: 6.25em;
+    text-align: center;
+    text-indent: 0;
+  }
+}
+/* line 77, ../../sass/toggle-dropdown/_nav.scss */
+.nav-item a:hover, .nav-item a:active {
+  background: gray;
+}
+
+/* line 84, ../../sass/toggle-dropdown/_nav.scss */
+li.hasChildren > ul {
+  display: none;
+}
+/* line 88, ../../sass/toggle-dropdown/_nav.scss */
+.lt-ie9 li:hover ul {
+  display: block;
+  position: absolute;
+}
+/* line 93, ../../sass/toggle-dropdown/_nav.scss */
+.lt-ie9 li ul li {
+  float: none;
+}
+@media (min-width: 40em) {
+  /* line 88, ../../sass/toggle-dropdown/_nav.scss */
+  li:hover ul {
+    display: block;
+    position: absolute;
+  }
+  /* line 93, ../../sass/toggle-dropdown/_nav.scss */
+  li ul li {
+    float: none;
+  }
+}
+
+/* line 99, ../../sass/toggle-dropdown/_nav.scss */
+.menu-icon {
+  position: relative;
+  padding-left: 1.5em;
+  display: block;
+  height: 2.5em;
+  color: white;
+  line-height: 2.7;
+  padding-left: 4.5em;
+  background: #404040;
+}
+/* line 7, ../../sass/shared/_menu-icon.scss */
+.menu-icon:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.3em;
+  width: 1.2em;
+  height: 0.18em;
+  background: white;
+  box-shadow: 0 0.3em 0 0 white, 0 0.6em 0 0 white;
+}
+/* line 16, ../../sass/shared/_media-queries.scss */
+.lt-ie9 .menu-icon {
+  display: none;
+}
+@media (min-width: 40em) {
+  /* line 99, ../../sass/toggle-dropdown/_nav.scss */
+  .menu-icon {
+    display: none;
+  }
+}
+/* line 113, ../../sass/toggle-dropdown/_nav.scss */
+.menu-icon:before {
+  left: 1.5em;
+  top: 38%;
+}
