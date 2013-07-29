@@ -1,0 +1,42 @@
+
+<!doctype html>
+<!-- based on jordan technique http://www.jordanm.co.uk/lab/sourceshuffling -->
+<!--[if IE 8]>    <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Footer Anchor Nav Menu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body:after {
+  content: 'global';
+  display: none;
+}
+
+@media screen and (min-width: 35em) {
+  body:after {
+      content: 'tablet';
+      display:none;
+  }
+}
+
+@media screen and (min-width: 56em) {
+  body:after {
+      content: 'desktop';
+      display:none;
+  }
+}
+    </style>
+</head>
+<body>
+    <!--Begin pattern HTML-->
+    <h1 class="title">HiSRC jQuery plugin</h1>
+    <div class="breakpoint">
+        <img src="img/small.png" data-medium="img/medium.png" data-large="img/large.png" alt="">
+    </div>
+    <!--End pattern HTML-->
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/source-shuffling/scripts.js" type="text/javascript"></script>
+</body>
+</html>

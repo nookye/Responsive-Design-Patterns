@@ -1,0 +1,1 @@
+responsiveEnhance(document.getElementById('picture'), 200);
